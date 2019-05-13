@@ -1,0 +1,429 @@
+
+
+<!DOCTYPE html PUBLIC "" "">
+<html>
+<head>
+
+<title> Vojvođanska banka a.d. | home</title>
+<META name="viewport" content="width=device-width">		 
+<META name="format-detection" content="telephone=no">	 
+<LINK href="/media/1065/otp_icon.png" rel="apple-touch-icon">																										
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+	<META name="robots" content="index, follow"> 
+<META name="keywords" content="OTP, Vojvodjanska banka, Vojvođanska banka banka, bank, kredit, krediti, ekonomija, investiranje, platni promet, tekuci racun, tekući račun, stednja, štednja, dinarska stednja, dinarska štednja, devizna stednja, deviyna štednja, elektronsko bankarstvo, kartice, kreditne kartice, platne kartice, master, maestro, card, visa, VISA, banke u srbiji, srpske banke, finansije, novac, pare, kes, keš, potrosacki krediti, potrošački krediti, gotovinski krediti, stambeni krediti">  
+<META name="description" content='OTP banka ad Srbija'>
+
+<LINK href="/css/OTP_main1.css" rel="stylesheet" type="text/css" data-template-style="true"> 
+<LINK href="/css/OTP_main.css" rel="stylesheet" type="text/css" data-template-style="true">
+ 
+<META name="fragment" content="!">
+ 
+<SCRIPT src="/scripts/fast.js" type="text/javascript"></SCRIPT> 
+<SCRIPT src="/scripts/page.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/scripts/card.js" type="text/javascript"></SCRIPT>
+	 
+<SCRIPT src="" type="text/javascript"></SCRIPT>
+
+
+
+
+	  <script>
+	  		function GoTo(){
+				window.location.href = 'https://www.voban.rs/novosti/specijalna-ponuda-za-keš-kredite/';
+				}	
+	  </script>
+ 
+<META name="GENERATOR"></HEAD> 
+
+<BODY>
+
+	
+
+<DIV class="layout">
+<DIV class="header absolute-breadcrumbs ">
+<DIV class="header-top">
+<DIV class="header-top__right">
+<DIV class="header-top__item header-top__item_search">
+<DIV class="search">
+<FORM class="search__form" action="/search/">
+	<INPUT name="q" class="search__input" type="text" placeholder="Search" >
+	<INPUT class="search__icon search__icon_submit" type="submit" placeholder="" value="" >
+</FORM></DIV></DIV>
+
+<DIV class="header-top__item header-top__item_lang-switch"><A class="header-top__link" 
+href="/under_construction/">EN</A></DIV></DIV>
+<!-- bodyText2 -->
+<div class="header-top__left">
+<div class="dropdown"><button class="dropbtn">Stanovništvo</button>
+<div class="dropdown-content"><a href="/stanovnistvo_krediti">Krediti</a><a href="/stanovnistvo_kartice">Kartice</a><a href="/paketi">Paketi</a><a href="/stednja">Štednja</a><a href="/e-banking">Elektronsko bankarstvo</a><a href="/ostale_usluge">Računi i usluge</a><a href="/osiguranje">Osiguranje</a></div>
+</div>
+
+
+	
+<div class="dropdown1"><button class="dropbtn1">Pravna lica</button>
+<div class="dropdown1-content"><a href="/mala_privreda">Mala privreda</a><a href="/privreda">Privreda</a><a href="/finansijska_trzista">Finansijska tržišta</a><a href="/brokersko_poslovanje">Brokerski poslovi</a><a href="/kastodi">Kastodi usluge</a><a href="/elektronsko_bankarstvo">Elektronsko bankarstvo</a></div>
+</div>
+
+<span class="header-top__item "> <a href="/poljoprivreda" class="header-top__link">Poljoprivreda</a> </span>	
+	
+<span class="header-top__item "> <a href="/o_nama" class="header-top__link">O nama</a> </span></div></DIV>
+             
+<DIV class="header-main">
+<DIV class="responsive-nav">
+<DIV class="responsive-nav__btn">
+<DIV class="responsive-nav__btn__burger"><SPAN class="responsive-nav__btn__burger-line"></SPAN></DIV></DIV>
+<!-- meni_levo_mob -->
+<div class="responsive-nav__list">
+<ul class="responsive-nav__item lvl1">
+<li><a href="#" class="root-item">Stanovništvo<span class="responsive-nav__item__arrow"></span></a>
+<ul class="responsive-nav__item lvl2">
+<li><a href="/stanovnistvo_krediti">Krediti</a></li>
+<li><a href="/paketi">Paketi</a></li>	
+<li><a href="/stanovnistvo_kartice">Kartice</a></li>
+<li><a href="/stednja">Štednja</a></li>
+<li><a href="/e-banking">Elektronsko bankarstvo</a></li>
+<li><a href="/ostale_usluge">Računi i usluge</a></li>
+<li><a href="/osiguranje">Osiguranje</a></li>	
+</ul>
+</li>
+
+<li><a href="/privreda">Privreda<span class="responsive-nav__item__arrow"></span></a>
+<ul class="responsive-nav__item lvl2">
+<li><a href="/privreda_plasmani">Plasmani</a></li>
+<li><a href="/depoziti">Depoziti</a></li>
+<li><a href="/privreda_platni_promet">Platni promet</a></li>
+<li><a href="/poslovne_kartice">Poslovne kartice</a></li>
+<li><a href="/pos_terminali">POS terminali</a></li>
+<li><a href="/elektronsko_bankarstvo">Elektronsko bankarstvo</a></li>
+</ul>
+</li>
+<li><a href="#">Poslovno bankarstvo<span class="responsive-nav__item__arrow"></span></a>
+<ul class="responsive-nav__item lvl2">
+<li><a href="/finansijska_trzista">Finansijska tržišta</a></li>
+<li><a href="/brokersko_poslovanje">Brokerski poslovi</a></li>
+<li><a href="/kastodi">Kastodi usluge</a></li>
+<li><a href="/elektronsko_bankarstvo">Elektronsko bankarstvo</a></li>
+</ul>
+</li>
+<li><a href="/poljoprivreda">Poljoprivreda<span class="responsive-nav__item__arrow"></span></a>
+<ul class="responsive-nav__item lvl2">
+<li><a href="/agro_paketi_racuna">Agro paketi računa</a></li>
+<li><a href="/beskamatni_kredit">Beskamatni krediti</a></li>
+<li><a href="/brzi_kredit">Brzi krediti</a></li>
+<li><a href="/dozvoljeni_minus_rpg">Dozvoljeni minus RPG</a></li>
+<li><a href="/investicioni_krediti_poljoprivreda">Investicioni krediti</a></li>
+<li><a href="/krediti_za_obrtna sredstva">Krediti za obrtna sredstva</a></li>
+<li><a href="/krediti_za_nova_jutra">Krediti za nova jutra</a></li>
+<li><a href="/subvencionisani_krediti">Subvencionisani krediti</a></li>
+</ul>
+</li>
+<li><a href="/o_nama" class="current">O nama<span class="responsive-nav__item__arrow"></span></a>
+<ul class="responsive-nav__item lvl2">
+<li><a href="/o_nama">O nama</a></li>
+<li><a href="/rukovodstvo">Menadžment banke</a></li>
+<li><a href="/finansijski_izvestaji_2019">Finansijski izveštaji</a></li>
+<li><a href="/drustvena_odgovornost">Društvena odgovornost</a></li>
+
+<li><a href="/mediji">Mediji</a></li>
+</ul>
+</li>
+</ul>
+</div>	
+</DIV>
+
+<DIV class="header-main__right">
+<SPAN class="header-main__item header-main__item_map mobile__visible">
+<A class="header-main__link header-main__link_map" href="/mrezafilijala">
+<SPAN class="header-main__link-text">Filijale</SPAN></A></SPAN>
+
+<SPAN class="header-main__item header-main__item_phone">
+0800 23 23 22 	<A class="mobile__visible" href="tel:0800 23 23 22 "></A><BR>
+<SPAN class="header-main__mobile-phone-note" href="">dostupan 24 časa, poziv je besplatan za sve mreže u Srbiji</SPAN></SPAN>			 
+
+<A class="header-main__item header-main__item_button button button_green" 
+href="https://secureweb.24x7.rs/OTP/Retail/Page?Language=sr-Latn-CS" target="_blank" style="font-size:14px;">e-Banking</A>&nbsp;
+<A class="header-main__item header-main__item_button button button_green" 
+href="/elektronsko_bankarstvo" target="_blank" style="font-size:14px;">e-Banking SME</A>	
+</DIV>
+
+
+<DIV class="header-main__left">
+<A class="header-main__item header-main__item_logo header-main__item_logo-rs" href="/">&nbsp;</A>
+
+<LABEL class="mobile__visible">&nbsp;</LABEL>					 
+		<A class="header-main__link header-main__link_map" href="/mrezafilijala">
+<SPAN class="header-main__link-text">Filijale</SPAN></A>
+
+
+
+<SPAN class="header-main__item header-main__item_map">
+<A class="header-main__link header-main__link_map" href="/mrezafilijala">
+<SPAN class="header-main__link-text">Bankomati</SPAN></A></SPAN>
+
+</DIV></DIV> 
+
+<!-- gl meni -->
+<div class="main-menu">
+	
+<div class="main-menu__item "><a href="/stanovnistvo_krediti" class="main-menu__link">Krediti</a></div>
+<div class="main-menu__item "><a href="/stanovnistvo_kartice" class="main-menu__link">Platne kartice</a></div>
+<div class="main-menu__item "><a href="/paketi" class="main-menu__link">Paketi</a></div>
+<div class="main-menu__item "><a href="/stednja" class="main-menu__link">Štednja</a></div>
+<div class="main-menu__item "><a href="/e-banking" class="main-menu__link">Elektronsko bankarstvo</a></div>
+<div class="main-menu__item "><a href="/ostale_usluge" class="main-menu__link">Računi i usluge</a></div>
+<div class="main-menu__item "><a href="/osiguranje" class="main-menu__link">Osiguranje</a></div>	
+	
+	
+
+
+</div>
+</DIV>
+
+<DIV id="rspNavVeil"></DIV>
+<div class="main-slider main-slider_index">
+<div class="main-slider__item" style="background-image: url('/media/3440/gl_baner_konacno.png');">
+<div class="main-slider__inner">
+<p style="color: #ffffff;" class="main-slider__item-text"> </p>
+<br /><br /><br />
+<p> </p>
+<br /><br /><br /><br /><br /><br /><br /><br />
+<div><a style="background-color: #f16f01;" href="/integracija" target="_blank" class="button button_green">Više informacija</a></div>
+</div>
+</div>
+</div>
+<div class="actions"><a href="/stambeni_krediti" title="Stambeni kredit" class="actions__item">
+<div class="actions__icon"><img src="/media/1359/home_z.png" alt="Stambeni kredit" /></div>
+<div class="actions__text">Stambeni krediti</div>
+</a> <a href="/gotovinski_krediti" title="Gotovinski krediti" class="actions__item">
+<div class="actions__icon"><img src="/media/1378/wallet1.png" alt="Gotovinski krediti" /></div>
+<div class="actions__text">Gotovinski krediti</div>
+</a> <a href="/stanovnistvo_kartice" title="Platne kartice" class="actions__item">
+<div class="actions__icon"><img src="/media/1376/ikona_credit_card.png" alt="Platne kartice" /></div>
+<div class="actions__text">Platne kartice</div>
+</a> <a href="https://webebank.ebb-bg.com/broker/?bank=vbub" target="_blank" title="Kastodi" class="actions__item">
+<div class="actions__icon"><img src="/media/1099/globe.png" alt="Kastodi" /></div>
+<div class="actions__text">Custodian e-office</div>
+</a> <a href="https://secureweb.24x7.rs/OTP/Retail/MigrateMobileUser/Index?Language=sr-Latn-CS" title="Mobilno bankarstvo" class="actions__item">
+<div class="actions__icon"><img src="/media/4299/phone_crv.png" alt="Mobilno bankarstvo" /></div>
+<div class="actions__text" style="color: #f5032e; font-weight: bold;">Aktivacija m-Banking</div>
+</a></div> 
+<div class="content">
+<div class="text__grayblock text__grayblock_iconed" style="background-color: #52ae30;">
+<div class="icon"><img src="/media/4283/i_belo.png" border="0" alt="obavestenje" /></div>
+<h2 class="text__green" style="color: #fff;">Radno vreme filijala Vojvođanske banke za vreme uskršnjih i prvomajskih praznika</h2>
+<br />
+<div style="color: #fff;">• od 26. aprila do 29. aprila 2019. godine - neradni dani<br /> • 30. aprila 2019. godine - redovno radno vreme<br /> • od 01. i 02. maja 2019. godine - neradni dani<br /> • od 03. maja 2019. godine - redovno radno vreme<br /><br />
+<div style="color: #fff;">Usled integracije Vojvođanske banke i OTP banke, molimo vas da se o preseljenju određenog broja filijala informišete <a href="/media/4282/radno-vreme-uskršnji-praznici.pdf" target="_blank">OVDE</a>.</div>
+</div>
+</div>
+</div>
+<div class="content">
+<div class="text__grayblock text__grayblock_iconed" style="background-color: #38841c;">
+<div class="icon"><img src="/media/4283/i_belo.png" border="0" alt="obavestenje" /></div>
+<h2 class="text__green" style="color: #fff;">Poštovani klijenti,</h2>
+<br />
+<div style="color: #fff;">Za pristup arhivskom rešenju za elektronsko bankarstvo za fizička lica kliknite <a href="https://webebank.ebb-bg.com/voban_ebank/auth/login" target="_blank" title="link">ovde</a>, a za pristup arhivskom rešenju za elektronsko bankarstvo za SBB klijente kliknite <a href="https://webebank.ebb-bg.com/voban_sme/auth/login" target="_blank" title="link">ovde </a></div>
+<p> </p>
+</div>
+</div>
+<div class="imageblock imageblock_rsp-icons">
+<div class="imageblock__inner" style="background-image: url('/media/3452/baner_slatkamala.png');">
+<h2 class="imageblock__title imageblock--open">Slatka mala kartica</h2>
+<ul>
+<li>Bolja od čekova!</li>
+<li>Kartica na rate bez kamate!</li>
+<li>Korišćenje u zemlji, inostranstvu i na internetu!</li>
+</ul>
+<div class="iconblock mobile__visible">
+<div class="iconblock__item"><a href="/osiguranje">
+<div class="iconblock__icon"><img src="/media/3993/globe_belo.png" alt="OTP Express" /></div>
+<span class="iconblock__item-title">OTP Express</span> </a></div>
+<div class="iconblock__item"><a href="/dozvoljeni_minus">
+<div class="iconblock__icon iconblock__icon_excentric_bottom"><img src="/media/3994/minus_ok_belo.png" alt="Mobilno bankarstvo" /></div>
+<span class="iconblock__item-title">Dozvoljeni minus</span> </a></div>
+<div class="iconblock__item"><a href="/poljoprivreda" target="_blank">
+<div class="iconblock__icon"><img src="/media/3995/ikona_agro_belo.png" alt="" /></div>
+<span class="iconblock__item-title">Agro ponuda</span> </a></div>
+<div class="iconblock__item"><a href="/paketi">
+<div class="iconblock__icon"><img src="/media/1060/icon_paket_o_belo.png" alt="" /></div>
+<span class="iconblock__item-title">Paketi</span> </a></div>
+</div>
+<div class="valign mobile__visible"></div>
+<br /> <a href="/slatka_mala_kartica" class="button button_green">Više informacija</a></div>
+</div>
+<div class="iconblock mobile__hidden">
+<div class="iconblock__item"><a href="/otp_express">
+<div class="iconblock__icon"><!-- --> <img src="/media/1099/globe.png" alt="OTP Express" /></div>
+<span class="iconblock__item-title" style="color: #999;">OTP Express</span> </a></div>
+<!-- -->
+<div class="iconblock__item"><a href="/dozvoljeni_minus">
+<div class="iconblock__icon iconblock__icon_excentric_bottom"><!-- --> <img src="/media/1314/minus_ok.png" alt="Mobilno bankarstvo" /></div>
+<span class="iconblock__item-title" style="color: #999;">Dozvoljeni minus</span> </a></div>
+<!-- -->
+<div class="iconblock__item"><a href="/poljoprivreda" target="_blank">
+<div class="iconblock__icon"><!-- --><img src="/media/3489/ikona_agro.png" alt="Popusti" /></div>
+<span class="iconblock__item-title" style="color: #999;">Agro ponuda</span></a></div>
+<!-- -->
+<div class="iconblock__item"><a href="/paketi">
+<div class="iconblock__icon"><img src="/media/1063/icon_paket_o.png" alt="Paketi racuna" /></div>
+<span class="iconblock__item-title" style="color: #999;">Paketi</span> </a></div>
+</div>
+
+
+<div class="imageblock">
+<div class="imageblock__inner" style="background-image: url('/media/3197/vb_kes-krediti-2018_0.jpg');">
+<h2 class="imageblock__title imageblock--open">Keš kredit</h2>
+<ul>
+<li>Kupite sami</li>
+<li>Keš krediti za sve što Vam nedostaje</li>
+</ul>
+<br /><a href="/kes_krediti" class="button button_green">Detaljnije</a></div>
+</div>
+<div class="root-imagenav">
+<div class="root-imagenav__item" style="background-image: url('/media/2859/novosti1.jpg');"><a href="/novosti" class="root-imagenav__link">Vesti</a></div>
+<div class="root-imagenav__item" style="background-image: url('/media/2861/oks1.jpg');"><a href="/olimpijski_komitet" class="root-imagenav__link">Olimpijski komitet Srbije</a></div>
+<div class="root-imagenav__item" style="background-image: url('/media/2860/oglasi1.jpg');"><a href="/pregled-oglasa/" target="_blank" class="root-imagenav__link">Oglasi</a></div>
+</div>
+<h2 class="content-title">Korisne informacije</h2>
+<div class="iconblock">
+<div class="iconblock__item"><a href="/referentna_kamatna_stopa" target="_blank">
+<div class="iconblock__icon"><img src="/media/1074/referent_kam_stopa.png" alt="Promenljivi elementi kamatnih stopa" /></div>
+<span class="iconblock__item-title" style="color: #999;">Promenljivi elementi kamatnih stopa</span></a></div>
+<div class="iconblock__item"><a href="/kursna-lista">
+<div class="iconblock__icon"><img src="/media/1075/kalkulator.png" alt="Kursna lista" /></div>
+<span class="iconblock__item-title" style="color: #999;">Kursna lista</span></a></div>
+<div class="iconblock__item"><a href="/dcc" target="_blank">
+<div class="iconblock__icon"><img src="/media/1076/dcc.png" alt="DCC" /></div>
+<span class="iconblock__item-title" style="color: #999;">DCC</span></a></div>
+<div class="iconblock__item"><a href="/media/4277/politika-upravljanja-prigovorima.pdf">
+<div class="iconblock__icon"><img src="/media/3468/tarifnici.png" alt="Politika upravljanja prigovorima" /></div>
+<span class="iconblock__item-title" style="color: #999;">Politika upravljanja prigovorima</span></a></div>
+</div>
+<div class="root-imagenav">
+<div class="iconblock">
+<div class="iconblock__item"><a href="/zastita_od_tehnoloskih_napada">
+<div class="iconblock__icon"><img src="/media/3330/i.png" alt="Zaštita od tehnoloških napada" /></div>
+<span class="iconblock__item-title" style="color: #999;">Zaštita od tehnoloških napada</span></a></div>
+<div class="iconblock__item"><a href="/saveti">
+<div class="iconblock__icon"><img src="/media/3264/saveti_klijenti1.png" alt="Saveti" /></div>
+<span class="iconblock__item-title" style="color: #999;">Virtualne valute-savet klijentima</span></a></div>
+<div class="iconblock__item"><a href="/integracija">
+<div class="iconblock__icon"><img src="/media/1079/sl_9.png" alt="integracija" /></div>
+<span class="iconblock__item-title" style="color: #999;">Opšti uslovi poslovanja i Naknade/Tarife</span></a></div>
+</div>
+</div>
+
+
+
+
+
+	
+	
+
+
+
+
+	
+	<div class="footer">
+<div class="footer__top footer-topline">
+<div class="footer-topline__right"></div>
+<div class="footer-topline__left">
+<div class="footer-topline__mobile-col"><a href="/kontakt" title="Budimo u kontaktu" target="_blank">Kontakt</a> <img src="/media/1069/x_mouse.png" alt="email" width="28" height="28" /> <img src="/media/1070/x_phone.png" alt="telefon" width="28" height="28" />  </div>
+<div class="footer-topline__social social"><a href="http://www.facebook.com/vojvodjanskabanka" target="_blank" class="social__item social__item_fb"></a> <a href="https://twitter.com/voban_otpgroup" target="_blank" class="social__item social__item_tw"></a> <a href="https://www.linkedin.com/company/vojvodjanska-banka" target="_blank" class="social__item social__item_lk"></a> <a href="https://www.youtube.com/user/vojvodjanskabanka" target="_blank" class="social__item social__item_yt"></a></div>
+</div>
+<div class="clear"></div>
+</div>
+<!--index-->
+<div class="footer__main site-navigation"><!-- -->
+<div class="site-navigation__subcol">
+<h3 class="site-navigation__group-title">O nama</h3>
+<ul class="site-navigation__list">
+<li class="site-navigation__item"><a href="/o_nama">O banci</a></li>
+<li class="site-navigation__item"><a href="/olimpijski_komitet">Olimpijski tim Srbije i mi</a></li>
+<li class="site-navigation__item"><a href="/finansijski_izvestaji_2018">Finansijski izveštaji</a></li>
+	<li class="site-navigation__item"><a href="/drustvena_odgovornost">Društveno odgovorno poslovanje</a></li>
+</ul>
+</div>
+<div class="site-navigation__subcol">
+<h3 class="site-navigation__group-title">Korisno</h3>
+<ul class="site-navigation__list">
+<li class="site-navigation__item"><a href="/mrezafilijala">Filijale i bankomati</a></li>
+<li class="site-navigation__item"><a href="/kursna-lista">Kursna lista</a></li>
+<li class="site-navigation__item"><a href="/karijera" target="_blank">Karijera</a></li>
+<li class="site-navigation__item"><a href="/prigovori" target="_blank">Prigovori</a></li>
+	
+</ul>
+</div>
+<div class="site-navigation__subcol">
+<h3 class="site-navigation__group-title">Info</h3>
+<ul class="site-navigation__list">
+<li class="site-navigation__item"><a href="/novosti">Vesti</a></li>
+<li class="site-navigation__item"><a href="/mediji">Mediji</a></li>
+<li class="site-navigation__item"><a href="/pravila_privatnosti">Pravila privatnosti</a></li>
+<li class="site-navigation__item"><a href="/eticki_kodeks">Etički kodeks</a></li>	
+<li class="site-navigation__item"><a href="/media/1235/pravila-privatnosti_eng_srb_final.pdf">Pravila privatnosti</a></li>	
+</ul>
+</div>
+<div class="site-navigation__subcol"></div>
+<div class="site-navigation__subcol"></div>
+<div class="site-navigation__subcol"></div>
+<!-- --></div>
+<!--/index-->
+<div class="footer__bottom footer-bottomline">
+<div class="footer-bottomline__col footer-bottomline__col__copy">
+<p style="width: 350px;">Sadržaj sajta je isključivo informativan</p>
+</div>
+<div class="footer-bottomline__col  footer-bottomline__col__add">
+<p> </p>
+</div>
+<div class="footer-bottomline__col footer-bottomline__col__info"><a href="/integracija">Opšti uslovi poslovanja</a>
+<p>
+Sa tradicijom dugom  150 godina, Vojvođanska banka uspešno posluje u Srbiji i predstavlja jedan od najpoznatijih domaćih brendova u zemlji. Po veličini aktive, svrstava se u deset najvećih banaka u Srbiji i ima status sistemski značajne banke. Sa četvrtom najvećom mrežom u Srbiji, četiri regionalna biznis centra za mala i srednja preduzeća i sa više od milion klijenata, pokriva teritoriju celu zemlje. Vojvođanska banka je savremeno organizovana, profitabilna i dugoročno uspešna banka, koja permanentno brine o zadovoljstvu svojih klijenata, zaposlenih i sredine u kojoj posluje.</p>
+<p>© 2018 «Vojvođanska banka»</p>
+</div>
+</div>
+</div></DIV><!-- /layout -->
+	
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '130978164205580'); 
+fbq('track', 'PageView');
+fbq('track', 'ViewContent');
+fbq('track', 'Search');
+fbq('track', 'CompleteRegistration');
+</script>
+<noscript>
+<img height="1" width="1" 
+src="https://www.facebook.com/tr?id=130978164205580&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Google Code for Remarketing Tag -->
+<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 834613097;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/834613097/?guid=ON&amp;script=0"/>
+</div>
+</noscript>
+	
+</BODY></HTML>

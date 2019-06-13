@@ -1,4 +1,4 @@
-Word Counts
+# Word Counts
 
 This script was developed by the Evans School Policy Analysis & Research Group (EPAR) to report how frequently groups of keywords appear in a group of documents, normalized to the length of each document. The initial use case was looking for discussion of specific areas (e.g. self help groups) by specifying keywords for each area (e.g. self help groups, shgs, women's empowerment collective, wecs).
 

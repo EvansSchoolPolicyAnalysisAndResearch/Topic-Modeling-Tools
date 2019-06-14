@@ -1,4 +1,4 @@
-Topic Modeling
+# Topic Modeling
 
 This script was developed by the Evans School Policy Analysis & Research Group (EPAR) to perform topic modeling on a group of documents. The initial use case was looking for undiscovered insights among grant proposals around initiatives by Bill & Melinda Gates Foundation, but this script can be adapted for any purpose.
 

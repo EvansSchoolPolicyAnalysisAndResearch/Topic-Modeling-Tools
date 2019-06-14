@@ -10,16 +10,14 @@
 # -- directory of the extracted pdfs with duplicate files removed (queries not in the file name) (by default called "unique_results")
 # -- spreadsheet with the most relevant PDFs sorted to the top, hereon referred to as the "top pdfs ledger"
 
-# Tip: 
-# If you have a long list of search queries, the program may be blocked at some point. To prevent this from happening, we recommend downloading the (free) tool Windscribe which encrypts your browsing activity: https://windscribe.com/
+# clear workspace # always run
+rm(list = ls())
 
 ################ USER INPUT ###################
-# clear workspace
-rm(list = ls())
 
 # specify the start and end dates for the results ('yyyy-mm-dd')
 start_date <- '1900-01-01'
-end_date <- '2019-06-14'
+end_date <- '2019-06-14' # update with today's date
 
 # set work directory (location of csv file; also where top pdfs ledger and directories will be output)
 setwd("//netid.washington.edu/wfs/EvansEPAR/Project/EPAR/Working Files/372 - EPAR Tools Development/_TOOLS_Main_Folder/pdf_extractor")

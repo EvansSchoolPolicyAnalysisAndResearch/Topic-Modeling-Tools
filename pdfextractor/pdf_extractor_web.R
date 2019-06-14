@@ -1,12 +1,13 @@
-# Purpose of script: This script was developed by the Evans School Policy Analysis & Research Group (EPAR) to retrieve PDFs from the first page of Google Results based on a list of search queries, as well as produce a ledger with the most relevant PDFs sorted to the top. The initial use case was looking for regulations related to digital credit in Sub-Saharan Africa and Asia.  
+# Purpose of script: This script was developed by the Evans School Policy Analysis & Research Group (EPAR) to retrieve PDFs from any number of pages of Google Results based on a list of search queries, as well as produce a ledger with the most relevant PDFs sorted to the top. The initial use case was looking for regulations related to digital credit in Sub-Saharan Africa and Asia.
 
-# Date: 2 May 2019
+# Date: 14 June 2019
 
 # Inputs: 
 # -- csv of search queries 
 
 # Outputs: 
-# -- directory with extracted pdfs
+# -- directory with all extracted pdfs with the queries that found them in the file name (by default called "web_results") 
+# -- directory of the extracted pdfs with duplicate files removed (queries not in the file name) (by default called "unique_results")
 # -- spreadsheet with the most relevant PDFs sorted to the top, hereon referred to as the "top pdfs ledger"
 
 # Tip: 
@@ -18,21 +19,30 @@ rm(list = ls())
 
 # specify the start and end dates for the results ('yyyy-mm-dd')
 start_date <- '1900-01-01'
-end_date <- '2016-12-31'
+end_date <- '2019-06-14'
 
-# set work directory (location of top pdfs ledger, where files will be output, and  csv and where result will be output)
+# set work directory (location of csv file; also where top pdfs ledger and directories will be output)
 setwd("//netid.washington.edu/wfs/EvansEPAR/Project/EPAR/Working Files/372 - EPAR Tools Development/_TOOLS_Main_Folder/pdf_extractor")
 
+# how many pages to search (0=just first page, 10=through second page, 20=through third page, etc.)
+results_page <- 10
+
 # reading the file with urls
-url_file <- read.csv("web_input_search_terms.csv") 
+url_file <- read.csv("web_input_search_terms_nk.csv") 
 
 # set name of top pdfs ledger
-fname = 'pdfs_extracted'
+fname <- 'pdfs_extracted'
+
+# set name of directory with all pdfs downloaded (and query in the file name)
+d_all_name <- 'web_results'
+
+# set name of directory with unique pdfs (duplicates removed)
+d_unique <- 'unique_results'
 
 ###############################################
 
 #getting packages installed/loaded
-packages <- c("rvest", "stringi", "stringr", "downloader", "insol","openxlsx")
+packages <- c("rvest", "stringi", "stringr", "downloader", "insol","openxlsx","urltools","tictoc")
 if (length(setdiff(packages, rownames(installed.packages()))) > 0) {
   install.packages(setdiff(packages, rownames(installed.packages())))  
 }
@@ -44,6 +54,8 @@ library(stringr)
 library(downloader)
 library(insol)
 library(openxlsx)
+library(urltools)
+library(tictoc)
 
 # creating a relevant date range for google query
 sdate <- as.POSIXct(strptime(start_date, "%Y-%m-%d"))
@@ -53,9 +65,9 @@ edate_jd <- round(JD(edate, inverse=FALSE))
 daterange_query <- paste0('+daterange:', sdate_jd, '-', edate_jd)
 
 # downloading the top 10 results (within "web_results" folder)
-# deleting it first
-unlink("web_results", recursive = TRUE)
-dir.create("web_results")
+# deleting old file if it exists, first
+unlink(d_all_name, recursive = TRUE)
+dir.create(d_all_name)
 
 # assigning a column name to the url file
 colnames(url_file) <- "urls"
@@ -83,58 +95,64 @@ downloadUrl <- function(url){
 unq_id_url <- as.vector(seq(from = 1, to = length(url_file$urls)))
 unq_id_url <- sprintf("url_%03d", unq_id_url)
 
-# initialzing the counter
-cntr <- 0
 # taking urls one-by-one
 len_url <- length(url_file$urls)
-for (i in 1:len_url){
-  cntr <- cntr + 1
-  # progress counter
-  prog <- (cntr/len_url)*100
-  # printing progress
-  print (paste0(round(prog,2), "% of search terms processed..."))
-  url <- as.character(url_file[i,])
-  # printing the urls
-  print (url)
-  # assigning the url ids
-  url_id <- unq_id_url[i]
-  # making the url in the right format
-  # only retreiving pdf filetypes for the search query
-  squery <- str_replace_all(url,"[\\s]+","+")
-  # handling queries in single quotes
-  squery <- gsub("'", "%22", squery)
-  # getting only pdf results
-  squery <- paste0(squery, "+filetype:pdf", daterange_query)
-  squery <- paste0("http://www.google.com/search?q=", squery)
-  
-  # getting cleaned results from the first page
-  html_s <- read_html(squery)
-  vector_links <- html_s %>% html_nodes(xpath='//h3/a') %>% html_attr('href')
-  vector_links <- gsub('/url\\?q=','',sapply(strsplit(vector_links[as.vector(grep('url', vector_links))],split='&'),'[',1))
-  
-  # initializing vector to save cleaned (http) links only
-  vector_clean <- vector(mode = "character")
-  # checking the resulting vector has all elements in the http format
-  for (j in 1:length(vector_links)){
-    if (grepl("http", vector_links[j]) == TRUE){
-      vector_clean <- append(vector_clean, vector_links[j])
+
+#create vector of pages to search
+pg_results_vec <- seq(0,results_page,10)
+
+tic("downloading files")
+print("starting downloads...")
+for (j in pg_results_vec){
+  for (i in 1:len_url){
+    url <- as.character(url_file[i,])
+    # printing the urls
+    # print(url)
+    # assigning the url ids
+    url_id <- unq_id_url[i]
+    # making the url in the right format
+    # only retreiving pdf filetypes for the search query
+    squery <- str_replace_all(url,"[\\s]+","+")
+    # handling queries in single quotes
+    squery <- gsub("'", "%22", squery)
+    # getting only pdf results
+    squery <- paste0(squery, "+filetype:pdf", daterange_query)
+    squery <- paste0("http://www.google.com/search?q=", squery)
+    #squery <- paste0("http://scholar.google.com/scholar?q=", squery) # hit security errors
+    squery <- paste0(squery,'&start=',j)
+    print(squery)
+    # getting cleaned results from the first page
+    html_s <- read_html(squery)
+    vector_links <- html_s %>% html_nodes(xpath='//a') %>% html_attr('href') # some links get their URLs tweaked for some reason
+    vector_links <- gsub('/url\\?q=','',sapply(strsplit(vector_links[as.vector(grep('url', vector_links))],split='&'),'[',1))
+    
+    # initializing vector to save cleaned (http) links only
+    vector_clean <- vector(mode = "character")
+    # keeps only links that start with "http" in the resulting vector
+    for (j in 1:length(vector_links)){
+      vector_links[j] <- URLdecode(vector_links[j])
+      if (grepl("http", vector_links[j]) == TRUE){
+        vector_clean <- append(vector_clean, vector_links[j])
+      }
     }
+    
+    # appending url string in front of every file
+    # file_url <- str_replace_all(url_id,"[\\s]+","_")
+    file_url <- paste0(url_id, '#$')
+    
+    # downloading the results now
+    down_path <- paste0(getwd(), "/",d_all_name)
+    lapply(vector_clean, downloadUrl)
+    
+    # sleep for some seconds
+    Sys.sleep(sample(5:50, 1) * 0.1)
   }
-  
-  # appending url string in front of every file
-  file_url <- str_replace_all(url_id,"[\\s]+","_")
-  file_url <- paste0(file_url, '#$')
-  
-  # downloading the results now
-  down_path <- paste0(getwd(), "/web_results")
-  lapply(vector_clean, downloadUrl)
-  
-  # sleep for some seconds
-  Sys.sleep(sample(5:50, 1) * 0.1)
 }
+print('finished downloads...')
+toc()
 
 # reading the downloaded files
-pdf_path <- paste0(getwd(),'/web_results/') 
+pdf_path <- paste0(getwd(),'/',d_all_name,'/') 
 pdf_files <- list.files(path = pdf_path, pattern = ".pdf$",  full.names = FALSE)
 
 # removing the files smaller than 10 KB
@@ -217,13 +235,16 @@ for (i in 2:length(unique_queries)){
 
 # cleaning up the downloaded files
 # create a new folder (unique_files)
-unlink("unique_files", recursive = TRUE)
-dir.create("unique_files")
-# copying files to the new location
-file.copy(file.path(pdf_path, pdf_files), paste0(getwd(),"/unique_files"))
+unlink(d_unique, recursive = TRUE) # deletes whatever unique files folder was there before (if it exists)
+dir.create(d_unique)
+# copying files (from web_results folder) to the new location
+tic("copying files")
+print("starting copying files to new folder...")
+file.copy(file.path(pdf_path, pdf_files), paste0(getwd(),"/",d_unique))
+print("finished copying files to new folder.")
 
 # keeping only the unique files
-old_names <- list.files(paste0(getwd(),"/unique_files"), full.names = FALSE)
+old_names <- list.files(paste0(getwd(),"/",d_unique), full.names = FALSE)
 # splitting the file names to seperate file name and file names
 file_split <- stri_split_fixed(old_names, "#$")
 new_names <- vector(mode="character")
@@ -235,10 +256,11 @@ for (i in 1:length(file_split)){
 }
 
 # "uniqueify" the files in the directory
-file.rename(from = file.path(paste0(getwd(),"/unique_files"), old_names), to = file.path(paste0(getwd(),"/unique_files"), new_names))
+file.rename(from = file.path(paste0(getwd(),"/",d_unique), old_names), to = file.path(paste0(getwd(),"/",d_unique), new_names))
+  # deletes the duplicates at this point
 
 # remove the web results folder
-unlink("web_results", recursive = TRUE)
+# unlink("web_results", recursive = TRUE)
 
 # prioritize the resultant dataframe
 temp_df <- df
